@@ -1,1 +1,12 @@
 <h1> Welcome to the Recipe Index </h1>
+
+<div class="recipes__container">
+<% @recipes.each do |recipe| %>
+  <div class="recipe_info">
+    <h3><%= recipe.name %></h3>
+    <%= button_to 'Remove' %>
+  </div>
+  <p><%= recipe.description%></p>
+
+  <% end %>
+</div>
