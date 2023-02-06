@@ -1,1 +1,43 @@
 <h1> Welcome to the Recipe Show </h1>
+
+<div class="recipe_details">
+  <div class="status">
+    <div class="holder">
+      <span><%= @recipes.preparation_time %> </span>
+
+      <div class="view_status">
+        <label class="switch">
+          <span class="slider round">Public</span>
+          <input type="checkbox">
+        </label>
+      </div>
+
+    </div>
+
+    <p><%=@recipes.cooking_time %></p>
+    <p>steps go here</p>
+
+    <div class="recipe__actions">
+      <%= link_to 'Generate shopping list' %>
+      <%= link_to 'Add ingredient' %>
+    </div>
+    <hr>
+
+    <table>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Value</th>
+        <th>Actions</th>
+      </tr>
+      <% @foods.each do |food| %>
+        <tr>
+          <td> <%= food.name %> </td>
+          <td> <%= food.quantity %>g</td>
+          <td> $<%= food.price%> </td>
+          <td> <%= button_to 'Modify Remove' %> </td>
+        </tr>
+        <% end %>
+    </table>
+  </div>
+</div>
