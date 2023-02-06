@@ -1,1 +1,21 @@
 <h1> Welcome to the Food Index </h1>
+
+<div class="foods_table">
+<%= link_to 'Add Food'%>
+  <table>
+  <tr>
+    <th>Foods</th>
+    <th>Measurement unit</th>
+    <th>Unit price</th>
+    <th>Actions</th>
+  </tr>
+  <% @foods.each do |food| %>
+  <tr>
+    <td><%= food.name%></td>
+    <td><%= food.measurement_unit%></td>
+    <td><%= food.price%></td>
+    <td><%= button_to 'Delete'%></td>
+  </tr>
+  <% end %>
+  </table>
+</div>
