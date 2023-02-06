@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  resources :foods, except: [:update]
+  resources :recipes, except: [:update]
+  resources :public_recipes, except: [:update]
+  resources :general_shopping_list, except: [:update]
+
 end

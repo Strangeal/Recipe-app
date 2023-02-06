@@ -12,7 +12,7 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-   - [Run Test](#run-tests)
+  - [Run Test](#run-tests)
   - [Run Linters](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -79,7 +79,6 @@ In order to run this project you need:
 
 `gem install rails`
 
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -101,6 +100,7 @@ Install this project with:
 `rails s`
 
 ### Run Test
+
 To run app test. run the following commad:
 
 `rspec`
@@ -113,11 +113,9 @@ To run tests, run the following command:
 
 OR
 
-`rubocop -a` 
+`rubocop -a`
 
 **it will automatically correct the errors**
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,6 +124,7 @@ OR
 ## 👥 Authors <a name="authors"></a>
 
 👨‍💻 **Justice Bajeri**
+
 - GitHub: [Link to Github Profile](https://github.com/Strangeal)
 - Twitter: [Link to Twitter Profile](https://twitter.com/Str_angeal)
 - LinkedIn: [Link to LinkedIn Profile](https://www.linkedin.com/in/justice-bajeri-0b7211243/)
@@ -135,8 +134,6 @@ OR
 - GitHub: [@NahnahAJ](https://github.com/NahnahAJ)
 - Twitter: [@NahnahAhjuwah](https://https://twitter.com/NahnahAhjuwah)
 - LinkedIn: [Felicia-Awuah](https://www.linkedin.com/in/felicia-awuah-gyedua/)
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
