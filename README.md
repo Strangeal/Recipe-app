@@ -23,11 +23,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Blog App] <a name="about-project"></a>
+# 📖 [Recipe App] <a name="about-project"></a>
 
-> The Blog app is a classic blog design website. ln which we can create, show the list of posts and empower readers to interact with them by adding comments and liking posts.
+> The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
 
-**[Blog App]** is a ruby blog website.
+**[Recipe App]** is a Ruby on Rails recipe website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -129,6 +129,12 @@ OR
 - GitHub: [Link to Github Profile](https://github.com/Strangeal)
 - Twitter: [Link to Twitter Profile](https://twitter.com/Str_angeal)
 - LinkedIn: [Link to LinkedIn Profile](https://www.linkedin.com/in/justice-bajeri-0b7211243/)
+
+👤 **Nahnah Ahjuwah**
+
+- GitHub: [@NahnahAJ](https://github.com/NahnahAJ)
+- Twitter: [@NahnahAhjuwah](https://https://twitter.com/NahnahAhjuwah)
+- LinkedIn: [Felicia-Awuah](https://www.linkedin.com/in/felicia-awuah-gyedua/)
 
 
 
