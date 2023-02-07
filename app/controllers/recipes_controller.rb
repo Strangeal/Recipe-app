@@ -10,7 +10,7 @@ class RecipesController < ApplicationController
   def create
     p params.inspect
     @recipe = Recipe.new(name: params[:name], preparation_time: params[:preparation_time],
-                         cooking_time: params[:cooking_time], description: params[:description])
+      cooking_time: params[:cooking_time], description: params[:description], public: params[:public])
     @recipe.user = current_user
     return unless @recipe.save
 
@@ -32,6 +32,6 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.permit(:name, :preparation_time, :cooking_time, :description)
+    params.require(:recipe).permit(:name, :preparation_time, :cooking_time, :descriptio, :public)
   end
 end

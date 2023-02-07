@@ -18,6 +18,10 @@
       <%= f.label :description %>
       <%= f.text_field :description %>
     </div>
+    <div class="form_control">
+      <%= f.label :public %>
+      <%= f.check_box :public, value: "true" %>
+    </div>
 
     <%= f.submit %>
   </div>

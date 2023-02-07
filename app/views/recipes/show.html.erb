@@ -5,15 +5,6 @@
     <div class="holder">
       <h2><%= @recipes.name %></h2>
       <span>Preparation time: <%= @recipes.preparation_time %> </span>
-
-      <div class="view_status">
-      <%= form_with do |f| %>
-        <%= f.label :public %>
-          <%= f.check_box :public %>
-        </label>
-        <% end %>
-      </div>
-
     </div>
 
     <p>Cooking time: <%=@recipes.cooking_time %></p>
