@@ -8,7 +8,6 @@ class RecipesController < ApplicationController
   end
 
   def create
-    p params.inspect
     @recipe = Recipe.new(name: params[:name], preparation_time: params[:preparation_time],
       cooking_time: params[:cooking_time], description: params[:description], public: params[:public])
     @recipe.user = current_user
@@ -20,7 +19,6 @@ class RecipesController < ApplicationController
   def show
     @recipes = Recipe.find(params[:id])
     @recipe_foods = RecipeFood.includes(:food)
-    # @food = Food.all
   end
 
   def destroy
