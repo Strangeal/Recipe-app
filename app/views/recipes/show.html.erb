@@ -21,7 +21,7 @@
 
     <div class="recipe__actions">
       <%= link_to 'Generate shopping list' %>
-      <%= link_to 'Add ingredient' %>
+      <%= link_to 'Add ingredient',  new_recipe_recipe_food_path(@recipes.id) %>
     </div>
     <hr>
 
@@ -38,7 +38,7 @@
           <td> <%= r_food.quantity %>g</td>
           <td> $<%= r_food.food.price%> </td>
           <td> <%= link_to ' Modify' %> </td>
-          <td> <%= button_to ' Remove',  food_path(r_food), method: :delete %> </td>
+          <td> <%= button_to ' Remove', recipe_recipe_food_path(@recipes.id, r_food.id), method: :delete %> </td>
         </tr>
         <% end %>
     </table>
