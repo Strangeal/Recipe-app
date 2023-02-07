@@ -32,13 +32,13 @@
         <th>Value</th>
         <th>Actions</th>
       </tr>
-      <% @foods.each do |food| %>
+      <% @recipe_foods.each do |r_food| %>
         <tr>
-          <td> <%= food.name %> </td>
-          <td> <%= food.quantity %>g</td>
-          <td> $<%= food.price%> </td>
+          <td> <%= r_food.food.name %> </td>
+          <td> <%= r_food.quantity %>g</td>
+          <td> $<%= r_food.food.price%> </td>
           <td> <%= link_to ' Modify' %> </td>
-          <td> <%= button_to ' Remove' %> </td>
+          <td> <%= button_to ' Remove',  food_path(r_food), method: :delete %> </td>
         </tr>
         <% end %>
     </table>
