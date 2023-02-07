@@ -3,7 +3,7 @@
 <div class="recipes__public">
 <% @recipes.each do |recipe| %>
   <div class="recipe_">
-    <h3><%= recipe.name %></h3>
+    <h3><%= link_to recipe.name, recipe_path(recipe.id) %></h3>
     <h6>By: <%= recipe.user.name %> </h6>
   </div>
   <div class="public_recipe_status">
