@@ -12,7 +12,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(name: params[:name], preparation_time: params[:preparation_time], cooking_time: params[:cooking_time], description: params[:description])
     @recipe.user = current_user 
     if @recipe.save
-      root_path
+      redirect_to recipes_path, notice: 'Recipe created successfully'
     end
   end
 
