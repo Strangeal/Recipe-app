@@ -6,7 +6,8 @@ class RecipeFoodsController < ApplicationController
   end
 
   def create
-    @recipe_foods = RecipeFood.new(quantity: params[:quantity], food_id: params[:food_id], recipe_id: params[:recipe_id])
+    @recipe_foods = RecipeFood.new(quantity: params[:quantity], food_id: params[:food_id],
+                                   recipe_id: params[:recipe_id])
     if @recipe_foods.save
       redirect_to recipe_path(params[:recipe_id])
     else

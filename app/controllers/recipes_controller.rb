@@ -9,11 +9,12 @@ class RecipesController < ApplicationController
 
   def create
     p params.inspect
-    @recipe = Recipe.new(name: params[:name], preparation_time: params[:preparation_time], cooking_time: params[:cooking_time], description: params[:description])
-    @recipe.user = current_user 
-    if @recipe.save
-      redirect_to recipes_path, notice: 'Recipe created successfully'
-    end
+    @recipe = Recipe.new(name: params[:name], preparation_time: params[:preparation_time],
+                         cooking_time: params[:cooking_time], description: params[:description])
+    @recipe.user = current_user
+    return unless @recipe.save
+
+    redirect_to recipes_path, notice: 'Recipe created successfully'
   end
 
   def show
@@ -28,7 +29,6 @@ class RecipesController < ApplicationController
     @recipe.destroy
     redirect_to recipes_path, alert: 'Recipe delete successfully'
   end
-
 
   private
 
