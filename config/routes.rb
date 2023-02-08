@@ -12,5 +12,4 @@ Rails.application.routes.draw do
   end
   resources :public_recipes, except: [:update]
   resources :general_shopping_lists, except: [:update]
-
 end
