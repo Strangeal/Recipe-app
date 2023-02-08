@@ -9,4 +9,11 @@ class User < ApplicationRecord
   has_many :foods, dependent: :destroy
 
   validates :name, presence: true
+
+  # ROLE = %i[admin default].freeze
+
+  def add_role
+    return unless Food.where(user_id: id)
+    update(role: 'admin')
+  end
 end
