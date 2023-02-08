@@ -11,9 +11,14 @@
   </head>
 
   <body>
-  <%= render partial: "shared/flash" %>
   <%= render partial: "shared/navbar" %>
+  <%= render partial: "shared/flash" %>
 
-    <%= yield %>
+    <main>
+      <section class="parent__container">
+        <%= yield %>
+      </section>
+    </main>
+
   </body>
 </html>
