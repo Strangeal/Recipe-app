@@ -1,1 +1,37 @@
 <h1> Welcome to the Recipe Show </h1>
+
+<div class="recipe_details">
+  <div class="status">
+    <div class="holder">
+      <h2><%= @recipes.name %></h2>
+      <span>Preparation time: <%= @recipes.preparation_time %> </span>
+    </div>
+
+    <p>Cooking time: <%=@recipes.cooking_time %></p>
+    <p>steps go here</p>
+
+    <div class="recipe__actions">
+      <%= link_to 'Generate shopping list', general_shopping_lists_path %>
+      <%= link_to 'Add ingredient',  new_recipe_recipe_food_path(@recipes.id) %>
+    </div>
+    <hr>
+
+    <table>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Value</th>
+        <th>Actions</th>
+      </tr>
+      <% @recipe_foods.each do |r_food| %>
+        <tr>
+          <td> <%= r_food.food.name %> </td>
+          <td> <%= r_food.quantity %>g</td>
+          <td> $<%= r_food.food.price%> </td>
+          <td> <%= link_to ' Modify' %> </td>
+          <td> <%= button_to ' Remove', recipe_recipe_food_path(@recipes.id, r_food.id), method: :delete %> </td>
+        </tr>
+        <% end %>
+    </table>
+  </div>
+</div>

@@ -1,6 +1,27 @@
 <h1> Welcome to the Food Index </h1>
-
 <h2> Hello <%= current_user.name %> </h2>
+
+<div class="foods_table">
+<%= link_to 'Add Food', new_food_path %>
+  <table>
+  <tr>
+    <th>Foods</th>
+    <th>Measurement unit</th>
+    <th>Unit price</th>
+    <th>Quantity</th>
+    <th>Actions</th>
+  </tr>
+  <% @foods.each do |food| %>
+  <tr>
+    <td><%= food.name%></td>
+    <td><%= food.measurement_unit%></td>
+    <td>$<%= food.price%></td>
+    <td><%= food.quantity%></td>
+    <td><%= button_to 'Delete', food_path(food), method: :delete %></td>
+  </tr>
+  <% end %>
+  </table>
+</div>
 
 <% if user_signed_in? %>
 <div>
@@ -12,3 +33,4 @@
 <p><%= link_to "Sign In", new_user_session_path %></p>
 </div>
 <% end %>
+
