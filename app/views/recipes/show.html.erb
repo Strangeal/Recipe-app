@@ -31,8 +31,8 @@
           <td> <%= r_food.food.name %> </td>
           <td> <%= r_food.quantity %></td>
           <td> $<%= r_food.food.price%> </td>
-          <td> <%= link_to 'Modify' %> </td>
-          <td>
+          <td class="action"> 
+          <%= link_to 'Modify' %>
           <%= button_to ' Remove', recipe_recipe_food_path(@recipes.id, r_food.id), method: :delete %>
           </td>
           <% end %>

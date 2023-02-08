@@ -1,14 +1,16 @@
-<h1> Welcome to the Recipe Index </h1>
-
 <div class="recipes__container">
-<% @recipes.each do |recipe| %>
-    <% if can? :destroy, recipe %>
-  <div class="recipe_info">
-    <h3><%= link_to recipe.name, recipe_path(recipe.id) %></h3>
-      <%= button_to 'Remove',  recipe_path(recipe), method: :delete %>
-  </div>
-  <p><%= recipe.description%></p>
-  <% end %>
+  <h2> Welcome to the Recipe Index </h2>
+
+  <% @recipes.each do |recipe| %>
+      <% if can? :destroy, recipe %>
+    <div class="recipe_info">
+      <div>
+      <h3><%= link_to recipe.name, recipe_path(recipe.id) %></h3>
+        <%= button_to 'Remove',  recipe_path(recipe), method: :delete %>
+      </div>
+      <p><%= recipe.description%></p>
+    </div>
+      <% end %>
     <% end %>
-  <%= link_to 'Add New Recipe', new_recipe_path %>
+    <%= link_to 'Add New Recipe', new_recipe_path %>
 </div>

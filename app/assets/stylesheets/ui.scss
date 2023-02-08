@@ -1,0 +1,55 @@
+.foods_table {
+  margin: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+
+  .action{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+  table td,
+  table th {
+    padding: 8px;
+    border: none;
+  }
+
+  table th {
+    padding: 12px 0;
+    text-align: left;
+    background-color: #56686140;
+  }
+
+  table tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+
+  table tr:hover {
+    background-color: #ddd;
+  }
+
+  // recipes
+  .recipes__container {
+    margin: auto;
+    width: 80%;
+    padding-top: 3rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    .recipe_info {
+      border: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 3rem;
+    }
+  }
+  

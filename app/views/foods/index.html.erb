@@ -1,27 +1,27 @@
-<h1> Welcome to the Food Index </h1>
-<h2> Hello <%= current_user.name %> </h2>
-
 <div class="foods_table">
+<h1> Welcome to the Food Index </h1>
+<h4> Hello <%= current_user.name %> </h4>
+
 <%= link_to 'Add Food', new_food_path %>
   <table>
-  <tr>
-    <th>Foods</th>
-    <th>Measurement unit</th>
-    <th>Unit price</th>
-    <th>Quantity</th>
-    <th>Actions</th>
-  </tr>
-  <% @foods.each do |food| %>
-  <tr>
-    <td><%= food.name%></td>
-    <td><%= food.measurement_unit%></td>
-    <td>$<%= food.price%></td>
-    <td><%= food.quantity%></td>
-    <% if can? :destroy, food %>
-    <td><%= button_to 'Delete', food_path(food), method: :delete %></td>
+    <tr>
+      <th>Foods</th>
+      <th>Measurement unit</th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+    <% @foods.each do |food| %>
+      <tr>
+        <td><%= food.name%></td>
+        <td><%= food.measurement_unit%></td>
+        <td>$<%= food.price%></td>
+        <td><%= food.quantity%></td>
+          <% if can? :destroy, food %>
+          <td><%= button_to 'Delete', food_path(food), method: :delete %></td>
+          <% end %>
+      </tr>
     <% end %>
-  </tr>
-  <% end %>
   </table>
 </div>
 
