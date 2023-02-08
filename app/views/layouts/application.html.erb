@@ -11,6 +11,14 @@
   </head>
 
   <body>
+  <nav>
+<%= link_to "Home", root_path %>
+<%= link_to "Recipes", recipes_path %>
+<%= link_to "Public Recipes", public_recipes_path %>
+<%= link_to "General Shopping List", general_shopping_list_index_path %>
+</nav>
     <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
   </body>
 </html>
