@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
@@ -10,7 +8,7 @@ class Ability
     #   can :read, :all
     #   return unless user.admin?
 
-    if user.add_role == "admin"
+    if user.add_role == 'admin'
       can :manage, :all
     else
       can :read, Food

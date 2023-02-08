@@ -14,6 +14,7 @@ class User < ApplicationRecord
 
   def add_role
     return unless Food.where(user_id: id)
+
     update(role: 'admin')
   end
 end
