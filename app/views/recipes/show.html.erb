@@ -29,7 +29,7 @@
           <td> <%= r_food.quantity %>g</td>
           <td> $<%= r_food.food.price%> </td>
           <td> <%= link_to ' Modify' %> </td>
-          <td> <%= button_to ' Remove', recipe_recipe_food_path(@recipes.id, r_food.id), method: :delete %> </td>
+          <td><% if can? :destroy, r_food %><%= button_to ' Remove', recipe_recipe_food_path(@recipes.id, r_food.id), method: :delete %><% end %> </td>
         </tr>
         <% end %>
     </table>
