@@ -6,5 +6,4 @@ class Food < ApplicationRecord
   validates :price, presence: true
   validates :quantity, numericality: { only_integer: true }, comparison: { greater_than: 0 }
   
-
 end

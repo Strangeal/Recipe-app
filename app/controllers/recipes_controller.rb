@@ -15,6 +15,7 @@ class RecipesController < ApplicationController
     redirect_to recipes_path, notice: 'Recipe created successfully'
     else
       render :new, alert: 'Sorry an error occured. Please try again'
+    end
   end
 
   def show
