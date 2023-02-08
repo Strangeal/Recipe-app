@@ -11,6 +11,6 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   def admin?
-    role = 'admin'
+    'admin'
   end
 end

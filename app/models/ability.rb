@@ -6,17 +6,17 @@ class Ability
     #
     #   can :read, :all
     #   return unless user.admin?
-    
+
     user ||= User.new
     return unless user.present?
-    can :manage, Food, user: user
-    can :manage, Recipe, user: user
+
+    can(:manage, Food, user:)
+    can(:manage, Recipe, user:)
     can :manage, RecipeFood do |food|
       food.recipe.user == user
     end
 
     can :read, :all
-
 
     # The first argument to `can` is the action you are giving the user
     # permission to do.
