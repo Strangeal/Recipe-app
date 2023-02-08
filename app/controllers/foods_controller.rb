@@ -10,11 +10,11 @@ class FoodsController < ApplicationController
   def create
     @food = Food.new(food_params)
     @food.user = current_user
-      if @food.save
-        redirect_to root_path, notice: 'Food added successfully'
-      else
-        render :new, alert: 'Sorry an error occured. Please try again'
-      end
+    if @food.save
+      redirect_to root_path, notice: 'Food added successfully'
+    else
+      render :new, alert: 'Sorry an error occured. Please try again'
+    end
   end
 
   def destroy
