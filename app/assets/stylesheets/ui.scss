@@ -34,13 +34,15 @@ table {
   }
 
   // recipes
-  .recipes__container {
+  .recipes__container,
+  .recipes__public {
     margin: auto;
     width: 80%;
     padding-top: 3rem;
 
     h2 {
       text-align: center;
+      margin-bottom: 1.5rem;
     }
 
     .recipe_info {
@@ -49,7 +51,13 @@ table {
     grid-template-columns: 1fr 2fr;
     padding: 1rem;
     margin: 1rem;
-    gap: 3rem;
+    gap: 2rem;
     }
   }
+
+  // Public recipe
+  // .recipes__public {
+  //   margin: auto;
+  //   width: 80%;
+  // }
   
