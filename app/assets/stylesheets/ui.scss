@@ -1,8 +1,4 @@
-.foods_table {
-  margin: auto;
-  width: 100%;
-}
-
+// Table
 table {
   width: 100%;
   border-spacing: 0;
@@ -35,14 +31,22 @@ table {
 
   // recipes
   .recipes__container,
-  .recipes__public {
+  .recipes__public,
+  .recipe_food,
+  .foods_table {
     margin: auto;
-    width: 80%;
+    width: 90%;
     padding-top: 3rem;
 
     h2 {
       text-align: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
     }
 
     .recipe_info {
@@ -55,9 +59,6 @@ table {
     }
   }
 
-  // Public recipe
-  // .recipes__public {
-  //   margin: auto;
-  //   width: 80%;
-  // }
+// general shopping lists
+
   
