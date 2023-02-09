@@ -2,8 +2,8 @@
 
 <div class="recipe_food">
   <h2>
-    <span>Total amount of itmes to buy: <%= @recipe_foods.all.count%> </span>
-    <span>Total value of food needed: $</span>
+    <span>Total amount of itmes to buy: <%= @missing_ingredient.count %> </span>
+    <span>Total value of food needed: $ <%= (@total_price).floor %></span>
   </h2>
   <table>
     <tr>
@@ -12,11 +12,11 @@
       <th>Price</th>
     </tr>
 
-    <% @recipe_foods.each do |recipe_food| %>
+    <% @missing_ing.each do |recipe_food| %>
       <tr>
-        <td> <%= recipe_food.food.name %> </td>
-        <td><%= recipe_food.quantity %> </td>
-        <td>$<%= recipe_food.food.price %> </td>
+        <td> <%= recipe_food[:name] %>  </td>
+        <td><%= recipe_food[:quantity] %> </td>
+        <td>$<%= recipe_food[:price] %> </td>
       </tr>
       <% end %>
   </table>
