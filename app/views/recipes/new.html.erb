@@ -1,4 +1,5 @@
-<h1>Add new Recipe</h1>
+<div class="form__container">
+<h2>Add new Recipe</h2>
 
 <%= form_with model: @recipes, url: recipes_path do |f| %>
 
@@ -10,7 +11,6 @@
     </div>
   <% end %>
   
-  <div class="form_container">
     <div class="form_control">
       <%= f.label :name %>
       <%= f.text_field :name %>
@@ -25,13 +25,13 @@
     </div>
     <div class="form_control">
       <%= f.label :description %>
-      <%= f.text_field :description %>
+      <%= f.text_area :description %>
     </div>
-    <div class="form_control">
+    <div class="form_control, stay_logged">
       <%= f.label :public %>
       <%= f.check_box :public, value: "true" %>
     </div>
 
-    <%= f.submit %>
+    <%= f.submit "Submit", class:"btn btn-success" %>
   </div>
 <% end %>

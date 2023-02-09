@@ -1,10 +1,10 @@
-<h1> Welcome to the General Shopping List Index </h1>
-
 <div class="recipe_food">
-  <h2>
+<h2> Welcome to the General Shopping List Index </h2>
+
+  <p>
     <span>Total amount of itmes to buy: <%= @missing_ingredient.count %> </span>
-    <span>Total value of food needed: $ <%= (@total_price).floor %></span>
-  </h2>
+    <span>Total value of food needed: $<%= (@total_price).floor %></span>
+  </p>
   <table>
     <tr>
       <th>Food</th>
@@ -14,9 +14,9 @@
 
     <% @missing_ing.each do |recipe_food| %>
       <tr>
-        <td> <%= recipe_food[:name] %>  </td>
-        <td><%= recipe_food[:quantity] %> </td>
-        <td>$<%= recipe_food[:price] %> </td>
+        <td><%= recipe_food[:name] %></td>
+        <td><%= recipe_food[:quantity] %></td>
+        <td>$<%= recipe_food[:price]%></td>
       </tr>
       <% end %>
   </table>

@@ -1,4 +1,5 @@
-<h1>Add food form</h1>
+<div class="form__container">
+  <h2>Add food form</h2>
 
   <%= form_with model: @foods , url: foods_path, data: {turbo: false} do |f|%>
     <% if @food.errors.any? %>
@@ -9,24 +10,22 @@
       </div>
     <% end %>
 
-    <div class="form__container">
       <div class="form_control">
-        <%= f.label :name %>
+        <%= f.label :name %><br />
         <%= f.text_field :name %>
       </div>
       <div class="form_control">
-        <%= f.label :measurement_unit %>
+        <%= f.label :measurement_unit %><br />
         <%= f.select :measurement_unit, ['gram', 'kilogram', 'cup', 'tablespoon']%>
       </div>
       <div class="form_control">
-        <%= f.label :price %>
+        <%= f.label :price %><br />
         <%= f.text_field :price %>
       </div>
       <div class="form_control">
-        <%= f.label :quantity %>
+        <%= f.label :quantity %><br />
         <%= f.text_field :quantity %>
       </div>
 
-      <%= f.submit %>
-    <div>
+      <%= f.submit "Submit", class:"btn btn-success" %>
   <% end %>

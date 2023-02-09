@@ -1,0 +1,85 @@
+// Devise form
+.f_parent__container {
+  margin: auto;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 1.5rem;
+  box-shadow: 1px 1px 5px 1px rgba(61, 60, 60, 0.366);
+  text-align: center;
+  border-radius: 8px;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: #566861;
+  }
+
+  .stay_logged {
+    input[type="checkbox"] {
+      width: auto;
+    }
+  }
+
+  .field {
+    padding: 0.5rem 0;
+    text-align: left;
+    color: #566861;
+
+    input {
+      padding: 0.5rem 1rem;
+      width: 100%;
+    }
+  }
+}
+
+// user forms
+.form__container {
+  margin: auto;
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  color: #566861;
+
+  h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #566861;
+  }
+
+  .form_control {
+    padding: 0.8rem 0;
+    color: #566861;
+
+    input,
+    select,
+    textarea {
+      padding: 0.5rem 1rem;
+      width: 100%;
+      border: 1px solid #566861;
+    }
+  }
+}
+
+@media screen  and (min-width: 600px) {
+  .f_parent__container,
+  .form__container {
+    width: 80%;
+  }
+
+  .parent__container {
+    margin: 0 2rem;
+  }
+}
+
+@media screen  and (min-width: 750px) {
+  .f_parent__container,
+  .form__container {
+    width: 60%;
+  }
+}
+
+@media screen  and (min-width: 1000px) {
+  .f_parent__container,
+  .form__container {
+    width: 50%;
+  }
+}
