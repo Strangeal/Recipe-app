@@ -1,14 +1,13 @@
-<h1> Welcome to the Recipe Show </h1>
+<div class="recipe__details">
+<h2> Welcome to the Recipe Show </h2>
 
-<div class="recipe_details">
   <div class="status">
-    <div class="holder">
       <h2><%= @recipes.name %></h2>
-      <span>Preparation time: <%= @recipes.preparation_time %> </span>
+    <div class="holder">
+      <p>Preparation time: <%= @recipes.preparation_time %> </p>
+      <p>Cooking time: <%=@recipes.cooking_time %></p>
     </div>
-
-    <p>Cooking time: <%=@recipes.cooking_time %></p>
-    <p>steps go here</p>
+    <p class="recipe_steps"><%= @recipes.description%></p>
 
     <%if can? :manage, @recipes %>
       <div class="recipe__actions">

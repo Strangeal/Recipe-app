@@ -8,7 +8,7 @@
       <h3><%= link_to recipe.name, recipe_path(recipe.id) %></h3>
         <%= button_to 'Remove',  recipe_path(recipe), method: :delete %>
       </div>
-      <p><%= recipe.description%></p>
+      <p class="recipe_steps"><%= recipe.description[0..100]...%></p>
     </div>
       <% end %>
     <% end %>
