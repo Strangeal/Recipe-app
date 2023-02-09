@@ -6,11 +6,11 @@
     <div class="recipe_info">
       <div>
       <h3><%= link_to recipe.name, recipe_path(recipe.id) %></h3>
-        <%= button_to 'Remove',  recipe_path(recipe), method: :delete %>
+        <%= button_to 'Remove',  recipe_path(recipe), method: :delete, class:"btn btn-outline-danger" %>
       </div>
       <p class="recipe_steps"><%= recipe.description[0..100]...%></p>
     </div>
       <% end %>
     <% end %>
-    <%= link_to 'Add New Recipe', new_recipe_path %>
+    <%= link_to 'Add New Recipe', new_recipe_path, class:"btn btn-outline-success" %>
 </div>

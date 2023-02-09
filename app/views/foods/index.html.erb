@@ -1,7 +1,7 @@
 <div class="foods_table">
 <h2> Welcome to the Food Index </h2>
 
-<%= link_to 'Add Food', new_food_path %>
+<%= link_to 'Add Food', new_food_path, class:"btn btn-outline-success mb-2" %>
   <table>
     <tr>
       <th>Foods</th>
@@ -17,9 +17,9 @@
         <td>$<%= food.price%></td>
         <td><%= food.quantity%></td>
           <% if can? :destroy, food %>
-          <td><%= button_to 'Delete', food_path(food), method: :delete %></td>
+          <td><%= button_to 'Delete', food_path(food), method: :delete, class:"btn btn-outline-danger"%></td>
           <% else %>
-          <td>No action</td>
+          <td class="text-danger">No action</td>
           <% end %>
       </tr>
     <% end %>

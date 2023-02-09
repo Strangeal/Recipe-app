@@ -11,8 +11,8 @@
 
     <%if can? :manage, @recipes %>
       <div class="recipe__actions">
-        <%= link_to 'Generate shopping list', general_shopping_lists_path %>
-        <%= link_to 'Add ingredient',  new_recipe_recipe_food_path(@recipes.id) %>
+        <%= link_to 'Generate shopping list', general_shopping_lists_path, class:"btn btn-outline-success" %>
+        <%= link_to 'Add ingredient',  new_recipe_recipe_food_path(@recipes.id), class:"btn btn-outline-success" %>
       </div>
       <hr>
       <% end %>
@@ -30,9 +30,9 @@
           <td> <%= r_food.food.name %> </td>
           <td> <%= r_food.quantity %></td>
           <td> $<%= r_food.food.price%> </td>
-          <td class="action"> 
-          <%= link_to 'Modify' %>
-          <%= button_to ' Remove', recipe_recipe_food_path(@recipes.id, r_food.id), method: :delete %>
+          <td class="action">
+          <%= button_to 'Modify', class:"btn btn-danger" %>
+          <%= button_to ' Remove', recipe_recipe_food_path(@recipes.id, r_food.id), method: :delete, class:"btn btn-outline-danger" %>
           </td>
           <% end %>
         </tr>
