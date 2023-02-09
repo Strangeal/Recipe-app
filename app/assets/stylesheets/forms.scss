@@ -10,6 +10,7 @@
 
   h2 {
     margin-bottom: 1rem;
+    color: #566861;
   }
 
   .stay_logged {
@@ -21,6 +22,7 @@
   .field {
     padding: 0.5rem 0;
     text-align: left;
+    color: #566861;
 
     input {
       padding: 0.5rem 1rem;
@@ -35,22 +37,24 @@
   width: 100%;
   padding: 1.5rem;
   margin-top: 3rem;
-  // box-shadow: 0px 0px 3px 0px red;
+  color: #566861;
 
   h2 {
     margin-bottom: 1rem;
     text-align: center;
+    color: #566861;
   }
 
   .form_control {
     padding: 0.8rem 0;
+    color: #566861;
 
     input,
     select,
     textarea {
       padding: 0.5rem 1rem;
       width: 100%;
-      border: 1px solid gray;
+      border: 1px solid #566861;
     }
   }
 }

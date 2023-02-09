@@ -2,7 +2,7 @@
 table {
   width: 100%;
   border-spacing: 0;
-
+  
   .action {
     display: flex;
     justify-content: space-around;
@@ -38,10 +38,12 @@ table tr:hover {
   margin: auto;
   width: 80%;
   padding-top: 3rem;
+  color: #566861;
 
   h2 {
     text-align: center;
     margin-bottom: 0.5rem;
+    color: #566861;
   }
 
   p {
@@ -51,7 +53,7 @@ table tr:hover {
   }
 
   .recipe_info {
-    border: 1px solid #ddd;
+    border: 1px solid #566861;
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 1rem;
@@ -83,5 +85,3 @@ table tr:hover {
   justify-content: space-between;
   margin-top: 2rem;
 }
-
-// general shopping lists
