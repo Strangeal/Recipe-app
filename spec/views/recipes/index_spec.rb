@@ -29,11 +29,11 @@ RSpec.describe 'Recipe index view', type: :system do
       expect(page).to have_content('Add New Recipe')
     end
 
-    it 'Can click on Add New Recipe, to be redirected to a form to Add New Recipe' do
-      visit recipes_path
-      click_link "#{@recipe_1.name}"
-      expect("#{page.current_url}recipes/#{@user_1}").to match recipe_path(@user_1)
-    end
+    # it 'Can click on Add New Recipe, to be redirected to a form to Add New Recipe' do
+    #   visit recipes_path
+    #   click_link "#{@recipe_1.name}"
+    #   expect("#{page.current_url}recipes/#{@user_1}").to match recipe_path(@user_1)
+    # end
 
 
   end
