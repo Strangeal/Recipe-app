@@ -9,7 +9,8 @@ table {
     align-items: center;
 
     .modify_btn {
-      [type=submit]:not(:disabled), button:not(:disabled) {
+      [type=submit]:not(:disabled),
+      button:not(:disabled) {
         border: none;
         background-color: #000;
         padding: 0.4rem 0.8rem;
