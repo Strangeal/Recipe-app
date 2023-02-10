@@ -61,7 +61,7 @@
 
 > Add a link to your deployed project.
 
-- [Comming Soon 🎈]()
+- [Live demo](https://recipe-app-4shb.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
