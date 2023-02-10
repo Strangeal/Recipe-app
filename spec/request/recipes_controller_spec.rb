@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe RecipesController, type: :request do
   describe 'food controller' do
-    
     context 'index action' do
       it 'render index action' do
         get '/recipes/'

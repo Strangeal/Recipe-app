@@ -3,12 +3,12 @@ require 'rails_helper'
 RSpec.describe 'Public Recipes index view', type: :system do
   describe 'Index page' do
     before(:each) do
-      @user_1 = User.create(name: 'Tom')
-      @user_2 = User.create(name: 'Dianne')
-      @recipe_1 = Recipe.create(name: 'Recipe 3', preparation_time: '12:05', cooking_time: '6:45',
-                                description: 'Lorem ipsum dolor sit', user_id: 1)
-      @recipe_2 = Recipe.create(name: 'Cheeseburger Soup', preparation_time: '12:05', cooking_time: '6:45',
-                                description: 'Lorem ipsum dolor sit', user_id: 2, public: true)
+      @user_one = User.create(name: 'Tom')
+      @user_two = User.create(name: 'Dianne')
+      @recipe_one = Recipe.create(name: 'Recipe 3', preparation_time: '12:05', cooking_time: '6:45',
+                                  description: 'Lorem ipsum dolor sit', user_id: 1)
+      @recipe_two = Recipe.create(name: 'Cheeseburger Soup', preparation_time: '12:05', cooking_time: '6:45',
+                                  description: 'Lorem ipsum dolor sit', user_id: 2, public: true)
 
       @recipes = Recipe.all
       visit public_recipes_path
