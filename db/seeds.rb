@@ -26,7 +26,3 @@ recipe_2 = Recipe.create(name: "Cheeseburger Soup", preparation_time: "12:05", c
 recipe_2 = Recipe.create(name: "Favorite Chicken Potpie", preparation_time: "12:05", cooking_time: "6:45", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus, a quam harum aliquid amet molestiae deserunt laborum, delectus voluptas illo rem inventore nihil sit consequatur iure vitae ratione reiciendis.Consectetur, commodi! Repudiandae neque, soluta debitis rerum necessitatibus, sunt, reprehenderit hic quia magni nemo sequi illum! Nemo beatae deleniti", user: user_2, public: true)
 recipe_3 = Recipe.create(name: "Apple Pie", preparation_time: "12:05", cooking_time: "6:45", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus, a quam harum aliquid amet molestiae deserunt laborum, delectus voluptas illo rem inventore nihil sit consequatur iure vitae ratione reiciendis.Consectetur, commodi! Repudiandae neque, soluta debitis rerum necessitatibus, sunt, reprehenderit hic quia magni nemo sequi illum! Nemo beatae deleniti", user: user_3)
 
-# entry_1 = RecipeFood.create(quantity: 12, recipe: recipe_1, food: food_1)
-# entry_2 = RecipeFood.create(quantity: 2, recipe: recipe_2, food: food_2)
-# entry_3 = RecipeFood.create(quantity: 19, recipe: recipe_1, food: food_1)
-# entry_4 = RecipeFood.create(quantity: 42, recipe: recipe_2, food: food_2)
