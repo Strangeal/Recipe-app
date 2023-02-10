@@ -31,7 +31,9 @@
           <td> <%= r_food.quantity %></td>
           <td> $<%= r_food.food.price%> </td>
           <td class="action">
-          <%= button_to 'Modify', class:"btn btn-danger" %>
+          <span class="modify_btn">
+          <%= button_to 'Modify'%>
+          </span>
           <%= button_to ' Remove', recipe_recipe_food_path(@recipes.id, r_food.id), method: :delete, class:"btn btn-outline-danger" %>
           </td>
           <% end %>

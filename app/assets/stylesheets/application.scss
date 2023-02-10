@@ -23,7 +23,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1575835638288-74138ce93c0e?');
+  // background-image: url('https://images.unsplash.com/photo-1575835638288-74138ce93c0e?');
   background-position: 0 -700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,4 +47,8 @@ a {
 
 hr {
   margin: 1rem 0;
+}
+
+.flash_messages {
+  padding: 1rem 4rem;
 }

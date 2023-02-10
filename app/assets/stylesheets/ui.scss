@@ -6,6 +6,22 @@ table {
   .action {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    .modify_btn {
+      [type=submit]:not(:disabled), button:not(:disabled) {
+        border: none;
+        background-color: #000;
+        padding: 0.4rem 0.8rem;
+        border-radius: 8px;
+        color: #fff;
+        opacity: 0.6;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
@@ -49,7 +65,6 @@ table tr:hover {
   p {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
   }
 
   .recipe_info {
@@ -71,13 +86,14 @@ table tr:hover {
   margin-bottom: 1rem;
 
   p {
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
     font-weight: 600;
+    font-size: 1.2rem;
   }
 }
 
 .recipe_steps {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .recipe__actions {
