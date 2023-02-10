@@ -3,10 +3,10 @@ require 'rails_helper'
 RSpec.describe 'Food index view', type: :system do
   describe 'Index page' do
     before(:each) do
-      @user_1 = User.create(name: "Tom")
-      @user_2 = User.create(name: "Dianne")
-      @food_1 = Food.create(name: "Apple", measurement_unit: "5kg", price: 1.99, quantity: 3, user_id: 1)
-      @food_2 = Food.create(name: "Pizza", measurement_unit: "5kg", price: 75, quantity: 1, user_id: 2)
+      @user_1 = User.create(name: 'Tom')
+      @user_2 = User.create(name: 'Dianne')
+      @food_1 = Food.create(name: 'Apple', measurement_unit: '5kg', price: 1.99, quantity: 3, user_id: 1)
+      @food_2 = Food.create(name: 'Pizza', measurement_unit: '5kg', price: 75, quantity: 1, user_id: 2)
 
       @foods = Food.all
     end
@@ -49,20 +49,15 @@ RSpec.describe 'Food index view', type: :system do
       click_link 'Add Food'
       expect("#{page.current_url}foods/new").to match new_food_path
     end
-
   end
 end
-
-
-
-
 
 # require 'rails_helper'
 
 # RSpec.describe 'Food index view', type: :system do
 #   describe 'Index page' do
 #     before(:each) do
-      
+
 #     end
 #   end
 
